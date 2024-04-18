@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">luga_luga</string>
+    <string name="hint_email">e-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_Login">Login</string>
+    <string name="hint_esqueci_senha">Esqueci Minha Senha</string>
+
 </resources>
