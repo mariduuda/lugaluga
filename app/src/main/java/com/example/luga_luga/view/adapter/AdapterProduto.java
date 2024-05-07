@@ -13,7 +13,7 @@ import com.example.luga_luga.model.Produto;
 
 import java.util.List;
 
-public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHolder> {
+public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.viewHolder> {
 
     private List<Produto> produtoList;
 
@@ -23,17 +23,17 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
 
     @NonNull
     @Override
-    public AdapterProduto.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View listaProdutos = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.adapter_produto,parent, false);
 
-        return new ViewHolder(listaProdutos);
+        return new viewHolder(listaProdutos);
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterProduto.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.nomeProd.setText(produtoList.get(position).getNome());
         holder.precoProd.setText(String.valueOf(produtoList.get(position).getNome()));
         holder.descProd.setText(produtoList.get(position).getDescricao());
@@ -47,10 +47,10 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
     public class ViewHolder {
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class viewHolder extends RecyclerView.ViewHolder {
         TextView nomeProd, precoProd, descProd;
 
-        public ViewHolder(@NonNull View itemView) {
+        public viewHolder(@NonNull View itemView) {
             super(itemView);
             nomeProd = itemView.findViewById(R.id.tv_nomeProduto);
             precoProd =itemView.findViewById(R.id.tv_nomeProduto);
@@ -59,5 +59,5 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.ViewHold
     }
 }
 
-}
+
 

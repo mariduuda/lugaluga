@@ -10,5 +10,7 @@
     <string name="tv_produto">Nome Produto</string>
     <string name="tv_preco">R$ 00,00</string>
     <string name="tv_descricao">LINGUICA COM PÃO E FAROFA É MUITO BOM</string>
+    <string name="tv_qtdProduto">10pc</string>
+    <string name="btn_alugar">Alugar</string>
 
 </resources>
